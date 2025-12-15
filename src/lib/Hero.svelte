@@ -2,6 +2,11 @@
 </script>
 
 <section class="pt-24 pb-32 px-6 max-w-[1200px] mx-auto relative">
+	<!-- Background gradient effect that fades out -->
+	<div class="absolute inset-0 -mx-[100vw] pointer-events-none overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-b from-gray-50 via-gray-50/40 to-transparent"></div>
+	</div>
+	
 	<!-- Patterned background that fades out -->
 	<div class="absolute bottom-0 left-0 right-0 h-48 pointer-events-none">
 		<div class="absolute inset-0 opacity-[0.03]">
