@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Twitter, Linkedin, Github, Youtube } from 'lucide-svelte';
+	import { Linkedin } from 'lucide-svelte';
 </script>
 
 <footer class="bg-black text-white pt-20 pb-10 px-6">
