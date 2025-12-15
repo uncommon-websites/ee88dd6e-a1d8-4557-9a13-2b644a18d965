@@ -1,32 +1,69 @@
 <script lang="ts">
 </script>
 
-<section class="pt-24 pb-20 px-6 text-center max-w-[1400px] mx-auto">
-	<div class="inline-flex items-center gap-2 text-xs font-medium text-gray-500 mb-8 border border-gray-200 rounded-full px-3 py-1 bg-white">
-		<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-		In Limited Early Access
-	</div>
+<section class="pt-24 pb-20 px-6 max-w-[1400px] mx-auto">
+	<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+		<!-- Text Content -->
+		<div class="flex-1 text-center lg:text-left">
+			<div class="inline-flex items-center gap-2 text-xs font-medium text-gray-500 mb-8 border border-gray-200 rounded-full px-3 py-1 bg-white">
+				<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+				In Limited Early Access
+			</div>
 
-	<h1 class="text-[56px] leading-[1.1] font-serif tracking-tight text-gray-900 mb-6 max-w-4xl mx-auto">
-		The Modern OS for High-Performance Brokers
-	</h1>
+			<h1 class="text-[56px] leading-[1.1] font-serif tracking-tight text-gray-900 mb-6">
+				The Modern OS for High-Performance Brokers
+			</h1>
 
-	<p class="text-lg text-gray-500 mb-10 max-w-xl mx-auto text-balance">
-		Renlo replaces fragmented CRMs and deal trackers with a single system built around how CRE deals really happen.
-	</p>
+			<p class="text-lg text-gray-500 mb-10 max-w-xl text-balance lg:mx-0 mx-auto">
+				Renlo replaces fragmented CRMs and deal trackers with a single system built around how CRE deals really happen.
+			</p>
 
-	<div class="flex items-center justify-center gap-4 mb-12">
-		<a href="#" class="bg-black text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
-			Book a call
-		</a>
-	</div>
+			<div class="flex items-center justify-center lg:justify-start gap-4">
+				<a href="#" class="bg-black text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
+					Book a call
+				</a>
+			</div>
+		</div>
 
-	<!-- Office Building Image -->
-	<div class="relative rounded-xl overflow-hidden border border-gray-200 mx-auto max-w-[1200px]">
-		<img 
-			src="/generated/image-modern-glass-office-building-exterior-wi-1765806510180-0.webp" 
-			alt="Modern commercial real estate office building" 
-			class="w-full h-auto"
-		/>
+		<!-- Abstract Animated Element -->
+		<div class="flex-shrink-0 w-[280px] h-[280px] relative">
+			<!-- Rotating outer ring -->
+			<div class="absolute inset-0 border-2 border-gray-200 rounded-full animate-[spin_20s_linear_infinite]"></div>
+			
+			<!-- Pulsing middle ring -->
+			<div class="absolute inset-8 border-2 border-gray-300 rounded-full animate-[spin_15s_linear_infinite_reverse] opacity-60"></div>
+			
+			<!-- Inner rotating dots -->
+			<div class="absolute inset-16 animate-[spin_10s_linear_infinite]">
+				<div class="absolute top-0 left-1/2 w-3 h-3 bg-black rounded-full -translate-x-1/2"></div>
+				<div class="absolute bottom-0 left-1/2 w-3 h-3 bg-gray-400 rounded-full -translate-x-1/2"></div>
+				<div class="absolute left-0 top-1/2 w-3 h-3 bg-gray-600 rounded-full -translate-y-1/2"></div>
+				<div class="absolute right-0 top-1/2 w-3 h-3 bg-gray-300 rounded-full -translate-y-1/2"></div>
+			</div>
+			
+			<!-- Center pulsing core -->
+			<div class="absolute inset-0 flex items-center justify-center">
+				<div class="w-12 h-12 bg-black rounded-full animate-pulse"></div>
+			</div>
+			
+			<!-- Connecting lines -->
+			<svg class="absolute inset-0 w-full h-full animate-[spin_25s_linear_infinite]" viewBox="0 0 280 280">
+				<line x1="140" y1="40" x2="140" y2="100" stroke="currentColor" stroke-width="1" class="text-gray-200" />
+				<line x1="140" y1="180" x2="140" y2="240" stroke="currentColor" stroke-width="1" class="text-gray-200" />
+				<line x1="40" y1="140" x2="100" y2="140" stroke="currentColor" stroke-width="1" class="text-gray-200" />
+				<line x1="180" y1="140" x2="240" y2="140" stroke="currentColor" stroke-width="1" class="text-gray-200" />
+			</svg>
+		</div>
 	</div>
 </section>
+
+<style>
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+</style>
