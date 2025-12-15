@@ -1,7 +1,27 @@
 <script lang="ts">
 </script>
 
-<section class="pt-24 pb-20 px-6 max-w-[1200px] mx-auto">
+<section class="pt-24 pb-32 px-6 max-w-[1200px] mx-auto relative">
+	<!-- Patterned background that fades out -->
+	<div class="absolute bottom-0 left-0 right-0 h-48 pointer-events-none">
+		<div class="absolute inset-0 opacity-[0.03]">
+			<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+						<path d="M 40 0 L 0 0 0 40" fill="none" stroke="black" stroke-width="1"/>
+					</pattern>
+					<linearGradient id="fade" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" style="stop-color:black;stop-opacity:1" />
+						<stop offset="100%" style="stop-color:black;stop-opacity:0" />
+					</linearGradient>
+					<mask id="fademask">
+						<rect width="100%" height="100%" fill="url(#fade)"/>
+					</mask>
+				</defs>
+				<rect width="100%" height="100%" fill="url(#grid)" mask="url(#fademask)"/>
+			</svg>
+		</div>
+	</div>
 	<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 		<!-- Text Content -->
 		<div class="flex-1 text-center lg:text-left">
