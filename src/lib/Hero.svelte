@@ -2,7 +2,7 @@
 	import { ArrowRight, ChevronDown, Search, Bell, CheckSquare, Mail, BarChart2, Zap, Layout, Users, Briefcase, Building2, Plus, MoreHorizontal, Filter, RefreshCw, Download } from 'lucide-svelte';
 </script>
 
-<section class="pt-40 pb-20 px-6 text-center max-w-[1400px] mx-auto">
+<section class="pt-24 pb-20 px-6 text-center max-w-[1400px] mx-auto">
 	<div class="inline-flex items-center gap-2 text-xs font-medium text-gray-500 mb-8 border border-gray-200 rounded-full px-3 py-1 bg-white">
 		<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
 		Early Access
