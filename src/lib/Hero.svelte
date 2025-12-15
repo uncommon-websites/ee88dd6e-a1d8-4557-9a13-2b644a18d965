@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="pt-24 pb-20 px-6 max-w-[1400px] mx-auto">
+<section class="pt-24 pb-20 px-6 max-w-[1200px] mx-auto">
 	<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 		<!-- Text Content -->
 		<div class="flex-1 text-center lg:text-left">

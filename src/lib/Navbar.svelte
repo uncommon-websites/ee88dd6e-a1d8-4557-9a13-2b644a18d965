@@ -3,7 +3,7 @@
 
 <div class="relative z-50 py-6">
 	<!-- Main Nav -->
-	<nav class="max-w-[1400px] mx-auto px-6">
+	<nav class="max-w-[1200px] mx-auto px-6">
 		<div class="bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl px-8 h-20 flex items-center justify-between">
 			<div class="flex items-center gap-8">
 				<a href="/" class="flex items-center gap-3 text-black hover:opacity-80 transition-opacity">
