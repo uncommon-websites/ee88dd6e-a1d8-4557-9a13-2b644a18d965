@@ -9,7 +9,7 @@
 	</div>
 
 	<h1 class="text-[56px] leading-[1.1] font-serif tracking-tight text-gray-900 mb-6 max-w-4xl mx-auto">
-		The AI-native CRM<br/>built for CRE brokers.
+		The Modern OS for High-Performance Brokers
 	</h1>
 
 	<p class="text-lg text-gray-500 mb-10 max-w-xl mx-auto text-balance">
